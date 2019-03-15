@@ -1,3 +1,4 @@
+import './index.scss'
 import Button from './button'
 
 const components = [

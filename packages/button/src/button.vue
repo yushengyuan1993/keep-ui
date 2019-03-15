@@ -11,12 +11,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../style/var";
 .keep-button {
   border: 1px solid #ccc;
   outline: none;
   padding: 5px 15px;
   border-radius: 3px;
-  color: #666;
+  color: $blue;
   background-color: #fff;
 }
 </style>
