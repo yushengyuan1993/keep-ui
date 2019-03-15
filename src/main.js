@@ -1,7 +1,6 @@
 // import Vue from 'vue'
 import App from './App.vue'
 import router from './router.js'
-import '../packages/index.scss'
 
 // 导入组件库
 import Keep from '../packages/index'
