@@ -2,17 +2,25 @@
 
 > this is an ui library for keep
 
-## Project setup
+### 安装依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 本地启动应用
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 打包成可用的资源库
+```sh
+npm run lib
+
+# 发布到 npmjs.com
+npm publish
+```
+
+### 生产环境打包
 ```
 npm run build
 ```
