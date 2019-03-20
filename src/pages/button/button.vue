@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="example">
     <keep-button>按钮</keep-button>
   </div>
 </template>
