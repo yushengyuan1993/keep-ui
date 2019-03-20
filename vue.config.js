@@ -1,5 +1,8 @@
 module.exports = {
-  // 修改 src 目录为 examples 目录
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/my-project/'
+    : '/',
+  // outputDir: './dist',
   pages: {
     index: {
       entry: 'src/main.js',
