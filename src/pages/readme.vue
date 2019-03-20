@@ -1,6 +1,6 @@
 <template>
   <div class="readme">
-    <h3># <router-link to="index">keep-ui</router-link></h3>
+    <h3># <router-link to="list">keep-ui</router-link></h3>
 
     <p>> this is an ui library for keep.</p>
 
@@ -26,12 +26,15 @@ export default {
 
 <style scoped lang="scss">
 .readme {
-  padding: 0 1em;
+  padding: 1em;
+  h3 {
+    margin-top: 12px;
+  }
   h5 {
     margin: 0;
   }
   p {
-    margin: 0.5em 1rem 1.2rem;
+    margin: 12px 12px 30px;
   }
 }
 </style>

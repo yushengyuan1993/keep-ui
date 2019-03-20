@@ -28,5 +28,14 @@ export default {
   .example {
     margin: 1em;
   }
+  a:visited {
+    color: #6666FF;
+  }
+  a:hover {
+    color: #0366d6;
+  }
+  a:link {
+    color: #66CCFF;
+  }
 }
 </style>

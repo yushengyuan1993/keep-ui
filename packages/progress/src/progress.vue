@@ -1,9 +1,9 @@
 <template>
   <div class="keep-progress">
     <div :style="`height: ${height}px;line-height: ${height}px`">
-      <div class="bar bar-left">L</div>
+      <div class="bar bar-left" :style="`width: ${leftTipWidth}px`">L</div>
       <div class="bar bar-centent"><div class="track" :style="`border-radius: ${radius?height:0}px`"><div class="path" :data-radius="width>=5?1:0" :style="`width: ${width}%;background-size: ${height}px 100%;border-radius: ${pathRadius}`"></div></div></div>
-      <div class="bar bar-right">R</div>
+      <div class="bar bar-right" :style="`width: ${rightTipWidth}px`">R</div>
     </div>
   </div>
 </template>
@@ -23,6 +23,14 @@ export default {
     height: {
       type: [String, Number],
       default: 30
+    },
+    leftTipWidth: {
+      type: Number,
+      default: 0
+    },
+    rightTipWidth: {
+      type: Number,
+      default: 0
     }
   },
   data () {

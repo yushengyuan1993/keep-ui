@@ -1,12 +1,17 @@
-<template lang="html">
-  <button class="keep-button">
+<template>
+  <button class="keep-button" @click="handleClick">
     <slot></slot>
   </button>
 </template>
 
 <script>
 export default {
-  name: 'keep-button'
+  name: 'keep-button',
+  methods: {
+    handleClick (e) {
+      this.$emit('click', e)
+    }
+  },
 }
 </script>
 

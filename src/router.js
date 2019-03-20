@@ -27,9 +27,9 @@ export default new VueRouter({
       }
     },
     {
-      name: 'index',
-      path: '/index',
-      component: resolve => require(['./pages/index'], resolve),
+      name: 'list',
+      path: '/list',
+      component: resolve => require(['./pages/list'], resolve),
       meta: {
         title: '组件'
       }
