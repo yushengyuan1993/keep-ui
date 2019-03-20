@@ -34,12 +34,24 @@ export default new VueRouter({
         title: '组件'
       }
     },
+
+    /**
+     * 组件
+     */
     {
       name: 'button',
       path: '/button',
       component: () => import('./pages/button/button'),
       meta: {
         title: '按钮'
+      }
+    },
+    {
+      name: 'progress',
+      path: '/progress',
+      component: () => import('./pages/progress/progress'),
+      meta: {
+        title: '进度条'
       }
     }
   ]
