@@ -1,11 +1,11 @@
 <template>
   <div class="example">
-    <keep-progress :radius="radius" :width="width" :height="height" :leftTipWidth="leftTipWidth" :rightTipWidth="rightTipWidth"></keep-progress>
+    <keep-progress-bar :radius="radius" :width="width" :height="height" :leftTipWidth="leftTipWidth" :rightTipWidth="rightTipWidth"></keep-progress-bar>
     
     <div class="test">进度条长度：<input type="number" v-model="width" min="0" max="100" placeholder="请输入进度条长度">%</div>
-    <div class="test">圆直角：<keep-button @click="radius=!radius">{{radius?'直角':'圆角'}}</keep-button></div>
+    <div class="test">圆直角：<keep-flat-button @click="radius=!radius">{{radius?'直角':'圆角'}}</keep-flat-button></div>
     <div class="test">
-      高度：<keep-button @click="height=30">30px</keep-button>&nbsp;<keep-button @click="height=60">60px</keep-button>
+      高度：<keep-flat-button @click="height=30">30px</keep-flat-button>&nbsp;<keep-flat-button @click="height=60">60px</keep-flat-button>
     </div>
     <div class="test">
       左边(L)宽度：<input class="tip" type="number" v-model="leftTipWidth" min="0" max="100" placeholder="请输入宽度度">
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'progress',
+  name: 'progressBar',
   data () {
     return {
       radius: false,

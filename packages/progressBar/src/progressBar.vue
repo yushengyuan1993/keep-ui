@@ -1,5 +1,5 @@
 <template>
-  <div class="keep-progress">
+  <div class="keep-progress-bar">
     <div :style="`height: ${height}px;line-height: ${height}px`">
       <div class="bar bar-left" :style="`width: ${leftTipWidth}px`">L</div>
       <div class="bar bar-centent"><div class="track" :style="`border-radius: ${radius?height:0}px`"><div class="path" :data-radius="width>=5?1:0" :style="`width: ${width}%;background-size: ${height}px 100%;border-radius: ${pathRadius}`"></div></div></div>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'keep-progress',
+  name: 'keep-progress-bar',
   props: {
     radius: {
       type: Boolean,
@@ -61,7 +61,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../style/var";
-.keep-progress {
+.keep-progress-bar {
   >div {
     display: flex;
     flex: 1;

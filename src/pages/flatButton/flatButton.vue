@@ -1,16 +1,16 @@
 <template>
   <div class="example">
     <ul>
-      <li><keep-button :size="small">按钮</keep-button></li>
-      <li><keep-button :size="normal">按钮</keep-button></li>
-      <li><keep-button :size="large">按钮</keep-button></li>
+      <li><keep-flat-button :size="small">按钮</keep-flat-button></li>
+      <li><keep-flat-button :size="normal">按钮</keep-flat-button></li>
+      <li><keep-flat-button :size="large">按钮</keep-flat-button></li>
     </ul>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'button',
+  name: 'flatButton',
   data () {
     return {
       small: 'small',

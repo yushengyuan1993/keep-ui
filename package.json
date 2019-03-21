@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "private": false,
   "description": "ui component library build on vue",
-  "keywords": ["component", "vue"],
+  "keywords": [
+    "component",
+    "vue"
+  ],
   "main": "lib/keep.umd.min.js",
   "author": "582718643@qq.com",
   "license": "ISC",
@@ -14,7 +17,8 @@
     "lib": "vue-cli-service build --target lib --name keep --dest lib packages/index.js"
   },
   "dependencies": {
-    "vue": "^2.6.6"
+    "vue": "^2.6.6",
+    "vue-router": "^3.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",

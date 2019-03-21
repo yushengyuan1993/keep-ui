@@ -6,14 +6,11 @@
 
 <script>
 export default {
-  name: 'keep-button',
+  name: 'keep-flat-button',
   props: {
     size: {
       type: String,
       default: 'normal'
-    },
-    classList: {
-      type: [String, Array, Object]
     }
   },
   methods: {
@@ -23,7 +20,7 @@ export default {
   },
   computed: {
     classList () {
-      let arr = ['keep-button'];
+      let arr = ['keep-flat-button'];
 
       arr.push(this.size);
 
@@ -35,7 +32,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../style/var";
-.keep-button {
+.keep-flat-button {
   border: 1px solid #ccc;
   outline: none;
   border-radius: 3px;

@@ -1,6 +1,9 @@
-Vue.use(VueRouter)
+import Vue from 'vue'
+import Router from 'vue-router'
 
-export default new VueRouter({
+Vue.use(Router)
+
+export default new Router({
   mode: 'history',
   scrollBehavior(to, from, savedPosition) {
     return {
@@ -39,17 +42,17 @@ export default new VueRouter({
      * 组件
      */
     {
-      name: 'button',
-      path: '/button',
-      component: () => import('./pages/button/button'),
+      name: 'flatButton',
+      path: '/flatButton',
+      component: () => import('./pages/flatButton/flatButton'),
       meta: {
         title: '按钮'
       }
     },
     {
-      name: 'progress',
-      path: '/progress',
-      component: () => import('./pages/progress/progress'),
+      name: 'progressBar',
+      path: '/progressBar',
+      component: () => import('./pages/progressBar/progressBar'),
       meta: {
         title: '进度条'
       }

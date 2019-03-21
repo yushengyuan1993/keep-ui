@@ -1,11 +1,12 @@
 import './index.scss'
-import Button from './button'
-import Progress from './progress'
+
+import FlatButton from './flatButton'
+import ProgressBar from './progressBar'
 import Toast from './toast'
 
 const components = [
-  Button,
-  Progress,
+  FlatButton,
+  ProgressBar,
   Toast
 ]
 
@@ -27,7 +28,7 @@ export default {
   // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
   install,
   // 以下是具体的组件列表
-  Button,
-  Progress,
+  FlatButton,
+  ProgressBar,
   Toast
 }
