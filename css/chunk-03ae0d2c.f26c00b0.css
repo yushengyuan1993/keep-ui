@@ -1,0 +1,1 @@
+.list>ul[data-v-714726ee]{counter-reset:index}.list>ul>li[data-v-714726ee]{margin:15px}.list>ul>li[data-v-714726ee]:before{content:"-" counter(index) ": ";counter-increment:index}
