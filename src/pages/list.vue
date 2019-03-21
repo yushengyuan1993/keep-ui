@@ -3,6 +3,7 @@
     <ul>
       <li><router-link to="button">按钮</router-link></li>
       <li><router-link to="progress">进度条</router-link></li>
+      <li><router-link to="toast">轻提示</router-link></li>
     </ul>
   </div>
 </template>

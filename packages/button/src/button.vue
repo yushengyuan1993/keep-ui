@@ -1,5 +1,5 @@
 <template>
-  <button class="keep-button" @click="handleClick">
+  <button :class="classList" @click="handleClick">
     <slot></slot>
   </button>
 </template>
@@ -7,9 +7,27 @@
 <script>
 export default {
   name: 'keep-button',
+  props: {
+    size: {
+      type: String,
+      default: 'normal'
+    },
+    classList: {
+      type: [String, Array, Object]
+    }
+  },
   methods: {
     handleClick (e) {
       this.$emit('click', e)
+    }
+  },
+  computed: {
+    classList () {
+      let arr = ['keep-button'];
+
+      arr.push(this.size);
+
+      return arr;
     }
   },
 }
@@ -20,9 +38,20 @@ export default {
 .keep-button {
   border: 1px solid #ccc;
   outline: none;
-  padding: 5px 15px;
   border-radius: 3px;
   color: $blue;
   background-color: #fff;
+  &.small {
+    padding: 3px 9px;
+    font-size: 12px;
+  }
+  &.normal {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+  &.large {
+    padding: 7px 18px;
+    font-size: 18px;
+  }
 }
 </style>

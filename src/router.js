@@ -53,6 +53,14 @@ export default new VueRouter({
       meta: {
         title: '进度条'
       }
+    },
+    {
+      name: 'toast',
+      path: '/toast',
+      component: () => import('./pages/toast/toast'),
+      meta: {
+        title: '轻提示'
+      }
     }
   ]
 })
