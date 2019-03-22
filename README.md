@@ -25,5 +25,5 @@ npm publish
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 更多Vue-cli3的配置信息
+去看 [vue-cli3](https://cli.vuejs.org/config/)的配置文档
