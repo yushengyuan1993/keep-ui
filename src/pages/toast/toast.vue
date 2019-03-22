@@ -1,6 +1,10 @@
 <template>
   <div class="example">
-    <keep-toast :message="msg" :showText="true" :showIcon="true" :iconSrc="iconSrc"></keep-toast>
+    <keep-toast :message="msg" :showDialog="showDialog" :showText="true" :showIcon="true" :iconSrc="iconSrc"></keep-toast>
+
+    <ul>
+      <li><keep-flat-button @click="showDialog=true" :size="'normal'">打开</keep-flat-button></li>
+    </ul>
   </div>
 </template>
 
@@ -10,7 +14,8 @@ export default {
   data () {
     return {
       msg: 'hi',
-      iconSrc: 'logo.png'
+      iconSrc: 'logo.png',
+      showDialog: false
     }
   }
 }
